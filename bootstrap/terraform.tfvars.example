@@ -1,0 +1,7 @@
+# Copy to terraform.tfvars and set a GLOBALLY-UNIQUE bucket name.
+# S3 bucket names are shared across all AWS accounts worldwide, so add
+# something random (e.g. your initials + a number).
+
+state_bucket_name = "eya-tf-state-CHANGE-ME-1234"
+lock_table_name   = "eya-tf-locks"
+region            = "eu-west-3"

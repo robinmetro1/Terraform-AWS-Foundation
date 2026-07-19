@@ -1,0 +1,21 @@
+# Local .terraform directories
+**/.terraform/*
+
+# State files (never commit — they can contain secrets)
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files with real values (keep *.example)
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# CLI config / credentials
+.terraformrc
+terraform.rc
+
+# NOTE: .terraform.lock.hcl IS committed on purpose (locks provider versions).

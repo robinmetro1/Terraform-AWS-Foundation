@@ -1,0 +1,13 @@
+# Copy to terraform.tfvars and adjust if you like. All values have sane
+# defaults in variables.tf, so this file is optional.
+
+region              = "eu-west-3"
+name                = "eya-foundation"
+vpc_cidr            = "10.0.0.0/16"
+public_subnet_cidrs = ["10.0.1.0/24", "10.0.2.0/24"]
+availability_zones  = ["eu-west-3a", "eu-west-3b"]
+allowed_cidrs       = ["0.0.0.0/0"]
+
+tags = {
+  CostCenter = "learning"
+}
